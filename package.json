@@ -1,0 +1,14 @@
+{
+  "name": "angular-server-azure",
+  "version": "1.0.0",
+  "main": "server.js",
+  "description": "Simple server for Angular which pulls in App Settings",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/benc-uk/angular-server-azure",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
