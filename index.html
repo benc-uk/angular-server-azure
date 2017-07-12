@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
   <title>Placeholder</title>
-  <script type="text/javascript" src="env.js"></script>
+  <script type="text/javascript" src="appsettings.js"></script>
 </head>
 <body>
   <h1>Placeholder</h1>
-  This file should be replaced
+  This file should be replaced!<br/><br/>
+  <h3>APPSETTING dump from appsettings.js:</h3>
+
+  <ul id="vars" style="font-family: monospace">
+  </ul>
+  <script>
+    for (var envvar in _APPSETTINGS) {
+      document.getElementById('vars').innerHTML += `<li>${envvar} = ${_APPSETTINGS[envvar]}</li>`;
+    }
+    document.getElementById('vars').innerHTML += "<li>"+_APPSETTINGS.TEST+"</li>";
+  </script>
+
 </body>
 </html>
