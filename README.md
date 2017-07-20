@@ -5,18 +5,19 @@ It provides access on the client side Angular code to server side environmental 
 
 ## How it works
 All environment variables starting with 'APPSETTING_' will be placed into a global dictionary called `_APPSETTINGS` within **appsettings.js**. They will be stored as regular key:value pairs.  
-To integrate with your Angular app place a reference to the script in your **index.html**, e.g.
+To integrate with your Angular app place a reference to the script inside your **index.html**, e.g.
 ```
 <script type="text/javascript" src="appsettings.js"></script>
 ```
 
 
 ## Accessing App Settings in your Angular app
-The _APPSETTINGS is a global dictionary object of key value pairs, access using `eval` e.g.
+The _APPSETTINGS object is a dictionary of key value pairs defined with global scope, access values using `eval` e.g.
 ```
 var foo = eval("_APPSETTINGS['MYSETTING']")
 ```
-We have to use `eval` to trick the Angular compiler, otherwise you will get errors due to **appsettings.js** only existing when running under this Node server and not when you are in your local Angular development environment. 
+We have to use `eval` in order to trick the Angular compiler, otherwise you will get errors due to **appsettings.js** only existing when running under 
+this Node server and not when you are in your local Angular development environment. It's a bit of a hack, but it works
 
 
 ## Running the server
