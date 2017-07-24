@@ -2,6 +2,7 @@
   "name": "angular-server-azure",
   "version": "1.0.0",
   "main": "server.js",
+  "engines": {"node": "6.9.1"},
   "description": "Simple server for Angular which pulls in App Settings",
   "scripts": {
     "start": "node server.js"
