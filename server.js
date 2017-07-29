@@ -21,5 +21,5 @@ app.get('/appsettings.js', function (req, res) {
 app.use('/', express.static(public));
 app.use((req, res) => res.sendFile(`${public}/index.html`));
 
-var port = process.env.PORT || 1337;
+var port = process.env.PORT || 3000;
 app.listen(port);
