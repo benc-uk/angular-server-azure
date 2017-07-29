@@ -21,7 +21,7 @@ this Node server and not when you are in your local Angular development environm
 
 
 ## Running the server
-Run as a regular Node app, e.g. `npm install` and then `npm start`. The server will listen on port 1337 or whatever value is held in the `PORT` environmental variable.
+Run as a regular Node app, e.g. `npm install` and then `npm start`. The server will listen on port 3000 or whatever value is held in the `PORT` environmental variable.
 
 
 ## Warning!
